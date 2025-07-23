@@ -1,0 +1,138 @@
+/* Base Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.cart-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+/* Cart Item */
+.cart-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+  gap: 10px;
+}
+
+.cart-img img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.cart-item {
+  flex: 1;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cart-item span {
+  font-size: 16px;
+  color: #444;
+}
+
+/* Quantity Buttons */
+.cart-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cart-btn .btn {
+  padding: 6px 12px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cart-price {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+  font-size: 16px;
+  font-weight: bold;
+  min-width: 120px;
+}
+
+/* Checkout Section */
+.checkout-section {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 2px solid #ccc;
+  text-align: center;
+}
+
+.checkout-section p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.checkout-section .btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.checkout-section .btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.checkout-section .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.checkout-section .btn-warning {
+  background-color: #ffc107;
+  color: #333;
+}
+
+.checkout-section .btn-warning:hover {
+  background-color: #e0a800;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .cart-div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-price {
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+
+  .cart-img img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .cart-btn {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
