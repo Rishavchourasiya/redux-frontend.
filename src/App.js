@@ -47,6 +47,7 @@ import './Component/Style.css';
 const App = ({ item }) => {
   const [cart, setcart] = useState([]);
   const [show, setshow] = useState(true);
+  console.log(show);
 
   // Add to cart with qty = 1
   const handleCart = (item) => {
